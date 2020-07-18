@@ -1,0 +1,82 @@
+POST http://localhost:8080/pet
+Content-Type: application/json
+
+{
+  "id": 4,
+  "category": {
+    "id": 2,
+    "name": "string"
+  },
+  "name": "Chucha",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 2,
+      "name": "qwerty"
+    },
+    {
+      "id": 3,
+      "name": "ytrewq"
+    }
+  ],
+
+  "status": "sold"
+}
+
+###
+
+PUT http://localhost:8080/pet
+Content-Type: application/json
+
+{
+  "id": 1,
+  "category": {
+    "id": 1,
+    "name": "string"
+  },
+  "name": "Chucha",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "string"
+    },
+    {
+      "id": 2,
+      "name": "str"
+    }
+  ],
+
+  "status": "available"
+}
+
+###
+
+GET http://localhost:8080/pet/findByStatus?status=sold
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/pet/ewrw
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/pet/1
+Content-Type: application/json
+
+{
+  "name": "sharik",
+  "status" : "sold"
+}
+
+###
+
+DELETE http://localhost:8080/pet/2
+Content-Type: application/json
+
+###
